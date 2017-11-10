@@ -11,25 +11,17 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                          <Component id="canvas1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jTextField4" alignment="0" pref="82" max="32767" attributes="0"/>
-                              <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jTextField3" max="32767" attributes="0"/>
-                              <Component id="resultados" max="32767" attributes="0"/>
-                              <Component id="jTextField6" alignment="0" pref="92" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTextField4" alignment="0" pref="82" max="32767" attributes="0"/>
+                      <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jTextField3" max="32767" attributes="0"/>
+                      <Component id="resultados" max="32767" attributes="0"/>
+                      <Component id="jTextField6" alignment="0" pref="92" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="732" max="32767" attributes="0"/>
               </Group>
@@ -58,7 +50,6 @@
                               <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="canvas1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="194" max="-2" attributes="0"/>
@@ -72,14 +63,15 @@
             <Property name="text" type="java.lang.String" value="ingrese Area"/>
           </Properties>
         </Component>
-        <Component class="java.awt.Canvas" name="canvas1">
-        </Component>
         <Component class="javax.swing.JTextField" name="jTextField3">
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField4">
           <Properties>
             <Property name="text" type="java.lang.String" value="ingrese altura"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="resultados">
           <Events>
